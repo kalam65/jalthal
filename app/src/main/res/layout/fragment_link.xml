@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LinkFragment">
+
+    <!-- Use a ConstraintLayout for more flexible positioning -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Link Ads"
+            android:layout_marginTop="40sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- ImageView for Ads below the title -->
+        <ImageView
+            android:id="@+id/adImageView"
+            android:layout_width="388dp"
+            android:layout_height="312dp"
+            android:contentDescription="Ad Image"
+            android:src="@drawable/water23"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+        <!-- Home button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHome"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#2196F3"
+            android:text="water"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/btnAnalytics"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/adImageView" />
+
+        <!-- Analytics button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAnalytics"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#045C07"
+            android:text="Sea Water"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnHome"
+            app:layout_constraintTop_toBottomOf="@id/adImageView" />
+
+        <!-- History button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHistory"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#F6DD04"
+            android:text="Link"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/btnLink"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnHome" />
+
+        <!-- Link button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLink"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#EC1303"
+            android:text="Link"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnHistory"
+            app:layout_constraintTop_toBottomOf="@id/btnAnalytics" />
+
+        <!-- ZoomCaterers Banner below the Link button -->
+        <ImageView
+            android:id="@+id/zoomCaterersBanner"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:src="@drawable/zoom"
+            android:contentDescription="Zoom Caterers Banner"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/btnLink"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

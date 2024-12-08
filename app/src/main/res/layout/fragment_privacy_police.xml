@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Effective Date: 27/11/2024"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jalthal App ('we,' 'our,' or 'us') is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your information when you use our mobile application (the 'App')."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Information We Collect"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We may collect the following types of information:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Camera Information Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="d. Camera Access\n- Purpose: The App requests camera access to allow users to capture photos or videos for features such as uploading profile pictures, scanning QR codes, or documenting issues.\n- Data Storage: Captured media is stored locally on your device or uploaded to secure servers with your explicit consent.\n- No unauthorized use: We do not use the camera without your permission or access any images or videos without your explicit action."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. How We Use Your Information"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We use the information collected to:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Provide and improve the App's features and services.\n- Respond to inquiries and provide customer support.\n- Customize your experience within the App.\n- Send updates, notifications, or marketing communications (you can opt-out at any time).\n- Analyze usage trends and improve App performance.\n- Ensure compliance with legal obligations."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Add more sections as needed -->
+
+    </LinearLayout>
+
+</ScrollView>
